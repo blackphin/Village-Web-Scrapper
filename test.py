@@ -52,7 +52,6 @@ dict_data["tehsil_name"] = driver.find_element(
 dict_data["village_name"] = driver.find_element(
     by=By.CSS_SELECTOR, value=".left-column h2"
 ).text
-dict_data["village_link"] = village_link
 dict_data["pincode"] = driver.find_element(
     by=By.CSS_SELECTOR, value=".vi tbody tr:nth-child(5) td:nth-child(2)"
 ).text
@@ -130,3 +129,4 @@ for nearby_villages_element in nearby_villages_elements_list:
 dict_data["nearby_villages"] = nearby_villages
 
 print(dict_data)
+driver.close()
