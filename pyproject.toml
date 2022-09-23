@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "village-info-scrapper"
+version = "0.1.0"
+description = ""
+authors = ["Shivansh Goel <shivanshgoel009@gmail.com>"]
+readme = "README.md"
+packages = [{include = "village_info_scrapper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.4.3"
+webdriver-manager = "^3.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.15.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
